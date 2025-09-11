@@ -1,0 +1,39 @@
+Path in Linux:
+/dev - содержит физ. данные о железе
+/proc - информация от процессах, сколько занимают cpu, memory etc
+Пример /dev: 
+ 1. /dev/sda - жесткий диск
+ 2. /dev/net - set interface
+ Пример /proc:
+ 3. /proc/cpuinfo
+ 4. /proc/meminfo
+
+Commands:
+grep need_word *.log - find words in files
+tail -n 40 file_name - last 40 lines
+ОЗУ: free -h, cat /proc/meminfo 
+BIOS: dmidecode, cat /sys/class/dmi/id/bios_version
+CPU: lscpu, cat /proc/cpuinfo
+/proc/pid - запущенные процессы
+ps aux --sort=-%mem | head -n 5 - result top 5 mem use
+ps aux --sort=-%cpu | head -n 5 - result top 5 cpu use programs
+
+Archives:
+tar -cf *name_arhive*.gz *name_dir* - c=create, f=files/folders. create arhive with you files/folders
+tar -xf *name_archive* -С *path*- x=exclude(разаархивировать), -C=опр каталог куда разаархивировать
+
+Пользаки:
+/etc/passwd - info about usernames
+/etc/group - инф о группах пользаков
+/etc/shadow - файл хранит пароли в зашифрованном виде
+useradd -m user1 - create user in system with him directocory=home/user1
+passwd user1 - change pass user
+sudo usermod -a -G sudo user1 - a=add to group without замены, G=new group
+
+Поиск:
+grep -rn *yout_text* 8.txt - find your_text all the files and show number string
+tail -n x *file_name* | grep *text* - find x strok then end your text
+ls lhS *path* | head -n 10 - find biggest file in path
+ls lhSr *path* | head -n 10 - find smalled file in path (r - reverse)
+find -type f -name "*.logs*" - f=no dir, find yours files
+
