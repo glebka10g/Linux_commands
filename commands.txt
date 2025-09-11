@@ -22,13 +22,15 @@ Archives:
 tar -cf *name_arhive*.gz *name_dir* - c=create, f=files/folders. create arhive with you files/folders
 tar -xf *name_archive* -С *path*- x=exclude(разаархивировать), -C=опр каталог куда разаархивировать
 
-Пользаки:
+Пользаки (r-read, w-write, x-выполнение):
 /etc/passwd - info about usernames
 /etc/group - инф о группах пользаков
 /etc/shadow - файл хранит пароли в зашифрованном виде
 useradd -m user1 - create user in system with him directocory=home/user1
 passwd user1 - change pass user
 sudo usermod -a -G sudo user1 - a=add to group without замены, G=new group
+chown <userName>:<groupName> <path> - change owner directory
+chmod -R u=rwx,g=,o= <path> - user=owner, g=group, o=users OR chmod -R <number code> <path>
 
 Поиск:
 grep -rn *yout_text* 8.txt - find your_text all the files and show number string
