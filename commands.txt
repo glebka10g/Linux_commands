@@ -17,6 +17,11 @@ CPU: lscpu, cat /proc/cpuinfo
 /proc/pid - запущенные процессы
 ps aux --sort=-%mem | head -n 5 - result top 5 mem use
 ps aux --sort=-%cpu | head -n 5 - result top 5 cpu use programs
+ps - process status, ps aux - all processes
+kill <PID> - to finish process
+systemctl restart <SERVICE> - restart service, systemctl - command управления системные сервисами
+systemctl enable <SERVICE> - перезапуск сервиса при загрузки системы
+journalctl -eu <SERVICE> - logs service
 
 Archives:
 tar -cf *name_arhive*.gz *name_dir* - c=create, f=files/folders. create arhive with you files/folders
@@ -31,6 +36,7 @@ passwd user1 - change pass user
 sudo usermod -a -G sudo user1 - a=add to group without замены, G=new group
 chown <userName>:<groupName> <path> - change owner directory
 chmod -R u=rwx,g=,o= <path> - user=owner, g=group, o=users OR chmod -R <number code> <path>
+r=4,w=2,x=1, т.е.
 
 Поиск:
 grep -rn *yout_text* 8.txt - find your_text all the files and show number string
