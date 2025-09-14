@@ -14,14 +14,21 @@ tail -n 40 file_name - last 40 lines
 ОЗУ: free -h, cat /proc/meminfo 
 BIOS: dmidecode, cat /sys/class/dmi/id/bios_version
 CPU: lscpu, cat /proc/cpuinfo
-/proc/pid - запущенные процессы
+
+
+Services:
 ps aux --sort=-%mem | head -n 5 - result top 5 mem use
 ps aux --sort=-%cpu | head -n 5 - result top 5 cpu use programs
 ps - process status, ps aux - all processes
+/proc/pid - запущенные процессы
 kill <PID> - to finish process
 systemctl restart <SERVICE> - restart service, systemctl - command управления системные сервисами
 systemctl enable <SERVICE> - перезапуск сервиса при загрузки системы
+systemctl daemon-reload - reload daemon systemctl
+systemctl show <SERVICE> - your service settings
+systemctl list-timers - systemd timers. активация сервиса по времени
 journalctl -eu <SERVICE> - logs service
+
 
 Archives:
 tar -cf *name_arhive*.gz *name_dir* - c=create, f=files/folders. create arhive with you files/folders
