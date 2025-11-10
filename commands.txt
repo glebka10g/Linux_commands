@@ -5,6 +5,7 @@ awk, sed:
 4, sed -i '1i TEXT' file.txt = add 1 line TEXT
 
 Path in Linux:
+mkdir - p ~/test/app/linux - создание вложенных каталогов
 .nameFile - скрытый файл или каталог, который не показывается в граф. интерфейсе, ls -a - увидеть скрытые файлы/dir
 /dev - содержит физ. данные о железе
 /proc - информация от процессах, сколько занимают cpu, memory etc
