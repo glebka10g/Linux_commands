@@ -48,8 +48,8 @@ curl -X POST -d "<text>" <https:page> - post, -X POST=метод запроса,
 Поиск:
 grep -rn *yout_text* 8.txt - find your_text all the files and show number string
 tail -n x *file_name* | grep *text* - find x strok then end your text
-ls lhS *path* | head -n 10 - find biggest file in path
-ls lhSr *path* | head -n 10 - find smalled file in path (r - reverse)
+ls -lhS *path* | head -n 10 - find biggest file in path
+ls -lhSr *path* | head -n 10 - find smalled file in path (r - reverse)
 find -type f -name "*.logs*" - f=no dir, find yours files
 
 Services:
