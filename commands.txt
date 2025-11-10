@@ -53,6 +53,7 @@ ls -lhSr *path* | head -n 10 - find smalled file in path (r - reverse)
 find -type f -name "*.logs*" - f=no dir, find yours files
 
 Services:
+pgrep *proccess* - PID - proccess
 ps aux --sort=-%mem | head -n 5 - result top 5 mem use
 ps aux --sort=-%cpu | head -n 5 - result top 5 cpu use programs
 ps - process status, ps aux - all processes
