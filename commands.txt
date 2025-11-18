@@ -19,6 +19,7 @@ wc -l = подсчет строк в файле
 
 Commands:
 grep need_word *.log - find words in files
+find /var -name *.log - поиск во всех директориях, файлов с окончанием .log
 ls | grep \.txt$ - показывает файлы, которые заканчиваются на .txt, т.е. .txt_log показывать не будет
 tail -n 40 file_name - last 40 lines
 ОЗУ: free -h, cat /proc/meminfo 
