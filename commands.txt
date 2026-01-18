@@ -18,6 +18,7 @@ wc -l = подсчет строк в файле
  4. /proc/meminfo
 
 Commands:
+stat - показать изменение файла
 grep need_word *.log - find words in files
 find /var -name *.log - поиск во всех директориях, файлов с окончанием .log
 ls | grep \.txt$ - показывает файлы, которые заканчиваются на .txt, т.е. .txt_log показывать не будет
@@ -66,7 +67,8 @@ systemctl enable <SERVICE> - перезапуск сервиса при загр
 systemctl daemon-reload - reload daemon systemctl
 systemctl show <SERVICE> - your service settings
 systemctl list-timers - systemd timers. активация сервиса по времени
-journalctl -eu <SERVICE> - logs service
+journalctl -eu <SERVICE> - logs service (логи ядра)
+journalctl -k | grep -i oom - просмотр сработал ли oom killer, -k - флаг вывод только сообщения ядра
 
 
 Archives:
