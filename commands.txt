@@ -36,6 +36,7 @@ passwd user1 - change pass user
 sudo usermod -a -G sudo user1 - a=add to group without замены, G=new group
 chown <userName>:<groupName> <path> - change owner directory
 chmod -R u=rwx,g=,o= <path> - user=owner, g=group, o=users OR chmod -R <number code> <path>
+chmod -R 653 file_path - example
 r=4,w=2,x=1, т.е.
 
 IP/Networks:
