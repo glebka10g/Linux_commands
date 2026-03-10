@@ -1,8 +1,4 @@
-Пример Handlers:
-
-## Example: Using Handlers in Ansible
-
-### Task
+### Пример использования Handlers
 
 ```yaml
 tasks:
