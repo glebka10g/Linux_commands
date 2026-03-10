@@ -1,6 +1,7 @@
-### Пример использования Handlers
+### Пример использования в Ansible
 
 ```yaml
+### Пример использования Handlers
 tasks:
   - name: Update nginx config
     template:
