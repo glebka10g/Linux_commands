@@ -13,3 +13,12 @@ handlers:
     service:
       name: nginx
       state: restarted
+
+### Пример использования Сonditionals
+
+```yaml
+- name: Install nginx on Debian
+  apt:
+    name: nginx
+    state: present
+  when: ansible_os_family == "Debian" (в этом случае проверяется установленный ли Debian?)
