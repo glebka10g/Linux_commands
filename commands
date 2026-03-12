@@ -1,0 +1,1 @@
+ansible nodes -i inventory.ini -m ping - ansible соединяется по ssh проверяет что ansible может подключиться, установлен Python.
