@@ -1,4 +1,15 @@
+VARIABLES:
+
 vars:
   my_package: htop  - описания variables
 name: "{{ my_package }} - use variables
   
+
+HANDLER:
+  handlers:
+    - name: restart nginx
+      service:
+        name: nginx
+        state: restarted
+
+notify: restart nginx - use handler
