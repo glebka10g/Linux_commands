@@ -1,0 +1,4 @@
+vars:
+  my_package: htop  - описания variables
+name: "{{ my_package }} - use variables
+  
