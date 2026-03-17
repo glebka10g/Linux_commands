@@ -35,3 +35,9 @@ LOOP:
         name: htop
         state: present
       when: ansible_os_family == "Debian"  - Сначала делает Gathering Facts (информация о системе), дальшет проверяет условие when: если выполняется условие true or false, то устанавливает пакет htopы
+
+
+  FACT:
+    - name: Show RAM
+      debug:                       - fact, а ниже информация, котрая нам нужна
+        var: ansible_memtotal_mb
