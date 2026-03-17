@@ -5,3 +5,4 @@
 -m ping=ping nodes
 ansible nodes -i inventory.ini -m ping - ansible соединяется по ssh проверяет что ansible может подключиться, установлен Python.
 become: true = делать все под root
+update_cache: yes = apt update
