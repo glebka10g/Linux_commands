@@ -27,3 +27,11 @@ LOOP:
         name: "{{ item }}"
         state: present
       loop: "{{ packages }}"  --- LOOP
+
+  CONDITIONAL:
+  tasks:
+    - name: Install htop only on Debian systems
+      apt:
+        name: htop
+        state: present
+      when: ansible_os_family == "Debian"  - Сначала делает Gathering Facts (информация о системе), дальшет проверяет условие when: если выполняется условие true or false, то устанавливает пакет htopы
