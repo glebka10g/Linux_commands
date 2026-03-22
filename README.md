@@ -23,3 +23,18 @@ handlers:
     name: nginx
     state: present
   when: ansible_os_family == "Debian" (в этом случае проверяется установленный ли Debian?)
+
+### COPY
+```yaml
+- name: Copy with permissions
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Copy file with mode
+      copy:
+        src: test.txt
+        dest: /tmp/test.txt
+        owner: root
+        group: root
+        mode: '0644'
