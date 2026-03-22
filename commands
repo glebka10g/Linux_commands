@@ -8,3 +8,8 @@ become: true = делать все под root
 update_cache: yes = apt update
 state: present - должен быть
 state: absent - не должно быть, удалить
+
+
+register: result
+- debug:
+    var: result.stdour -- register проверка
