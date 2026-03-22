@@ -13,3 +13,7 @@ state: absent - не должно быть, удалить
 register: result
 - debug:
     var: result.stdour -- register проверка
+
+ignore_errors - игнорирование ошибок
+
+tags: install, tags: start - ansible-playbook play.yml --tags install - запсукает только определенные тэги 
