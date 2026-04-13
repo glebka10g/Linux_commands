@@ -49,6 +49,7 @@ curl -o text.txt https:/google.com - download google page
 curl -v https://google.com - show заголовки site-page
 curl https://google.com/get - get in curl
 curl -X POST -d "<text>" <https:page> - post, -X POST=метод запроса, -d=передаваемый текст
+netstat - показывает активные соединения и информация о сет. интерфейсах.
 
 Поиск:
 grep -rn *yout_text* 8.txt - find your_text all the files and show number string
